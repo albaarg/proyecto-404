@@ -7,7 +7,8 @@
       "config": "build-and-maestro-test.yml",
       "android": {
         "buildType": "apk",
-        "image": "latest"
+        "image": "latest",
+        "gradleCommand": ":app:assembleRelease"
       },
       "ios": {
         "simulator": true,
