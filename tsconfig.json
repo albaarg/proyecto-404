@@ -2,13 +2,24 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
+    "jsx": "react-native",
+    "skipLibCheck": true,
+    "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "#assets/*": ["assets/*"],
+      "#components/*": ["components/*"],
+      "#helpers/*": ["helpers/*"],
+      "#hooks/*": ["hooks/*"],
+      "#navigation/*": ["navigation/*"],
+      "#screens/*": ["screens/*"],
+      "#services/*": ["services/*"],
+      "#theme": ["theme.ts.ts"],
+      "#types": ["types.ts"]
     }
   },
+  "exclude": ["node_modules", "web-build"],
   "include": [
+    "node_modules/@types",
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",

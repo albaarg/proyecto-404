@@ -1,0 +1,8 @@
+appId: com.albiarg.proyecto404
+---
+- launchApp:
+     appId: com.albiarg.proyecto404
+  - tapOn: "selectedItems"
+  - tapOn: 
+      id: "Ok"
+- assertVisible: 'Selected item successfully.*'
