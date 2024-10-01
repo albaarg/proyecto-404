@@ -367,7 +367,7 @@ const styles = StyleSheet.create({
     alignSelf: "flex-start",
   },
   errorText: {
-    color: Colors.gray,
+    color: Colors.red,
     marginLeft: 16,
   },
 });
